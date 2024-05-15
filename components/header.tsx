@@ -36,7 +36,7 @@ export default function Header() {
       ></motion.div>
 
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-          <button onClick={handleNav} className={`text-3xl  ${!isMobile && 'hidden'} absolute left-0 ml-40 `}>
+          <button onClick={handleNav} className={`text-3xl z-20 ${!isMobile && 'hidden'}  ml-60 `}>
           {nav ? <AiOutlineClose /> : <AiOutlineMenu />}
         </button>
           {!isMobile &&(
