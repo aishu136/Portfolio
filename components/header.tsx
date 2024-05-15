@@ -83,10 +83,11 @@ export default function Header() {
         </ul>
         )}
         {isMobile && nav && (
-        <ul className="flex flex-col items-center justify-center gap-x-1 text-[0.4rem] font-medium text-gray-500 relative">
+        <div className={`absolute top-full left-0 w-full bg-white shadow-md `}>
+        <ul className="flex flex-col items-center justify-center gap-x-1 text-[0.9rem] font-medium text-gray-500 relative">
           {links.map((link) => (
             <motion.li
-              className="h-1/4  flex items-center justify-center relative"
+              className=" border-b   flex items-center justify-center relative"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -103,6 +104,7 @@ export default function Header() {
                 onClick={() => {
                   setActiveSection(link.name);
                   setTimeOfLastClick(Date.now());
+                  handleNav();
                 }}
               >
                 {link.name}
@@ -122,7 +124,7 @@ export default function Header() {
             </motion.li>
           ))}
         </ul>
-
+   </div>
         )}
         
       </nav>
