@@ -36,7 +36,7 @@ export default function Header() {
       ></motion.div>
 
       <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-          <button onClick={handleNav} className={`text-3xl z-20 ${!isMobile && 'hidden'} ml-60`}>
+          <button onClick={handleNav} className={`text-3xl  ${!isMobile && 'hidden'} absolute left-0 ml-40 `}>
           {nav ? <AiOutlineClose /> : <AiOutlineMenu />}
         </button>
           {!isMobile &&(
@@ -83,11 +83,11 @@ export default function Header() {
         </ul>
         )}
         {isMobile && nav && (
-        <div className={`absolute top-full left-0 w-full bg-white shadow-md `}>
+        <div className={`absolute top-full w-60 bg-white shadow-md `}>
         <ul className="flex flex-col items-center justify-center gap-x-1 text-[0.9rem] font-medium text-gray-500 relative">
           {links.map((link) => (
             <motion.li
-              className=" border-b   flex items-center justify-center relative"
+              className=" border-b flex items-center justify-center relative"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
