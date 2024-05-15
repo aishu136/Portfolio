@@ -38,7 +38,7 @@ export const experiencesData = [
     description:
       "Developed a streamlined onboarding application for new associates, leveraging  Spring Boot and ReactJS frameworks. Successfully created RESTful APIs in the controller layer and implemented seamless associate authentication using java and spring framework which reduced manual efforts, resulting in a 75% improvement in overall system efficiency and enabling easy navigation and tracking of associates.Managed the codebase with frequent updates via the GIT version control system.Crafted the components using Reactjs framework ,HTML  and also styling the UI with Material UI and CSS.Performed form validation using Formik and Yup in the frontend using Reactjs.",
     icon: React.createElement(CgWorkAlt),
-    date: "Oct 2021- Mar 2024",
+    date: "Oct 2021 - Mar 2024",
   },
   {
     title: "Full stack Developer",
@@ -47,7 +47,7 @@ export const experiencesData = [
     description:
       "I am Developing RESTful APIs in the controller layer and architecting complex business logic in the service layer using Java and Spring Boot framework, resulting in a 40% increase in API performance and a 25% reduction in response time.Led the implementation of Next.js for frontend development, utilized Figma for UI/UX design, and integrated React.js for user interaction improvements; achieved a 30% faster page load time and 20% increase in conversion rate.",
     icon: React.createElement(LuGraduationCap),
-    date: "March 2024",
+    date: "March 2024 - present",
   },
 
   
